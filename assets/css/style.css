@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+}
+
+header li{
+    padding: 5%;
+}
+
+header h1{
+    flex: 1 0 50%;
+    padding-left: 7%;
+}
+
+header nav{
+    flex: 1 0 50%;
+}
+
+figure{
+    background-image: url(https://placehold.co/1150x250);
+    background-size: contain;
+    height: 50vh;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 5%;
+    background-repeat: no-repeat;
+}
