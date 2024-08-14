@@ -43,3 +43,18 @@ figure{
     padding: 5%;
     background-repeat: no-repeat;
 }
+
+main{
+    display: flex;
+}
+
+main section h2{
+    flex: 1 0 50%;
+    display: block;
+}
+
+main section p{
+    flex: 1 0 50%;
+    display: block;
+    justify-content: end;
+}
