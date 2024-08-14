@@ -1,47 +1,47 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    align-items: center;
+ header{
     display: flex;
     flex-wrap: wrap;
-}
+    align-items: center;
+    height: 10vh;
+    border: 1px solid red ;
+ }
+
+ header h1{
+    flex: 1 0 50%;
+    border: 1px solid red ;
+ }
+
+ header nav{
+    flex: 1 0 50%;
+    display:flex;
+    border: 1px solid red ;
+ }
 
 header ul{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    list-style: none;
-    width: 100%;
-}
-
-header li{
-    padding: 5%;
-}
-
-header h1{
-    flex: 1 0 50%;
-    padding-left: 7%;
-}
-
-header nav{
-    flex: 1 0 50%;
-}
-
-.firstImg{
-    background-image: url(https://placehold.co/1150x250);
-    background-size: contain;
-    height: 50vh;
-    width: 100%;
-    border: 1px solid red;
-    display: flex;
     justify-content: end;
-    align-items: end;
-    padding: 5%;
-    background-repeat: no-repeat;
+    width: 100%;
+   
+}
+header li{
+    list-style: none;
+    padding-right: 10%;
+    
+}
+
+
+
+main,footer{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red ;
 }
 
 aside{
@@ -51,11 +51,35 @@ aside{
     justify-content: end;
     padding: 1% 2%;
 }
+section{
+    flex: 1 0 80%;
+    padding: 1% 2%;
+}
 
-main{
+footer li{
+    list-style: none;
+}
+footer ul{
     display: flex;
-    padding-left: 20%;
-    margin-top: 3%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#firstPicture img{
+    width: 100%;
+}
+
+.firstImg{
+    background: url(https://placehold.co/1200x300);
+    background-size: contain;
+    height: 55vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid red ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 5%;
 }
 
 main section p{
@@ -66,74 +90,15 @@ main section p{
     text-align: justify;
 }
 
-.prueba{
-    display: flex;
-    padding-left: 20%;
-    padding-top: 3%;
-}
-
-.secondImg{
-    background-image: url(https://placehold.co/720x250);
-    background-size: contain;
-    height: 45vh;
-    width: 75%;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    background-repeat: no-repeat;
-    margin-left: 10%;
-}
-
 .skills{
-    position: relative;
     display: flex;
-    flex: 1 0 25%;
-    display: inline;
     flex-wrap: wrap;
-    flex-direction: row;
-    
+}
+.skills section{
+    flex: 1 0 45%;
 }
 
-.thirdImg{
-    flex: 1 0 25%;
-    background-image: url(https://placehold.co/350x120);
-    background-size: contain;
-    height: 15vh;
-    width: 28%;
-    background-repeat: no-repeat;
-    margin-left: 10%;
-    list-style: none;
+.skills img{
+    width: 100%;
 }
-.fourImg{
-    flex: 1 0 25%;
-    background-image: url(https://placehold.co/350x120);
-    background-size: contain;
-    height: 15vh;
-    width: 28%;
-    background-repeat: no-repeat;
-    margin-left: 65%;
-    list-style: none;
-    position: relative;
-    bottom: 20%;
-}
-.fiveImg{
-    flex: 1 0 25%;
-    background-image: url(https://placehold.co/350x120);
-    background-size: contain;
-    height: 15vh;
-    width: 28%;
-    background-repeat: no-repeat;
-    margin-left: 10%;
-    list-style: none;
-}
-.sixdImg{
-    flex: 1 0 25%;
-    background-image: url(https://placehold.co/350x120);
-    background-size: contain;
-    height: 15vh;
-    width: 28%;
-    background-repeat: no-repeat;
-    margin-left: 10%;
-    list-style: none;
-}
+
