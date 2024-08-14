@@ -44,17 +44,19 @@ figure{
     background-repeat: no-repeat;
 }
 
-main{
-    display: flex;
+aside{
+    border-radius: 10px solid black;
 }
 
-main section h2{
-    flex: 1 0 50%;
-    display: block;
+main{
+    display: flex;
+    padding-left: 20%;
+    margin-top: 3%;
 }
 
 main section p{
-    flex: 1 0 50%;
-    display: block;
-    justify-content: end;
+    display: flex;
+    padding-left: 20%;
+    margin-top: 1%;
 }
+
