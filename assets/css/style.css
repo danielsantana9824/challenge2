@@ -43,3 +43,20 @@ figure{
     padding: 5%;
     background-repeat: no-repeat;
 }
+
+aside{
+    border-radius: 10px solid black;
+}
+
+main{
+    display: flex;
+    padding-left: 20%;
+    margin-top: 3%;
+}
+
+main section p{
+    display: flex;
+    padding-left: 20%;
+    margin-top: 1%;
+}
+
