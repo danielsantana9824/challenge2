@@ -163,19 +163,6 @@ main section p{
 
 .imagen:hover {filter: saturate(180%);}
 
-.image-text {
-    position: absolute;
-    top: 10%;
-    left: 24%;
-    transform: translate(-20%, -50%);
-    z-index: 1;
-    color: white;
-    font-size: 90px;
-    font-weight: 900;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 3px black;
-  }
-
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
     header
