@@ -84,7 +84,6 @@ footer ul{
     box-shadow:-1px -1px 6px 0 rgb(159, 7, 7), 4px 4px 16px 2px rgb(1, 12, 130);
 }
 
-
 .firstImg{
     background: url(../images/screen.jpg);
     background-size: contain;
@@ -95,14 +94,13 @@ footer ul{
     justify-content: flex-end;
     align-items: end;
     padding: 5%;
-    /* box-shadow:-1px -1px 6px 0 rgb(1, 211, 26), 4px 4px 16px 2px rgb(5, 250, 241); */
 }
 
 main section p{
     margin-top: 3%;
     display: flex;
     padding-left: 7%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     padding-right: 5%;
     text-align: justify;
     font-size:0.6cm;
