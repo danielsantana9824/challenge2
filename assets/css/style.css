@@ -11,9 +11,15 @@
 body{
     background-color: black;
     color: white;
+    
+}
+
+nav{
+    display: flex;
 }
 
  header{
+    /* position: fixed; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -21,14 +27,29 @@ body{
     background-color: var(--nav);
  }
 
- header h1{
+ header h1 a{
+    margin-top: 4%;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+ header,aside {
     flex: 1 0 50%;
-    
     padding-left: 2%;
  }
 
+ h3{
+    flex: 1 0 50%;
+    padding-right: 2%;
+ }
+
+
  nav li a{
+    text-decoration: none;
     color: white;
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
 
  header nav{
@@ -46,7 +67,6 @@ header ul{
 header li{
     list-style: none;
     padding-right: 10%;
-    
 }
 
 main,footer{
@@ -67,16 +87,32 @@ section{
     padding: 1% 2%;
 }
 
+footer li a{
+    margin-top: 4%;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
 footer li{
+    margin-top: 4%;
     list-style: none;
 }
+
 footer ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+footer{
+    margin-bottom: 5%;
+}
+
 #secondImage img{
+    flex-wrap: wrap;
     display: flex;
     width: 1000px;
     height: 500px;
@@ -116,7 +152,8 @@ main section p{
     flex: 1 0 45%;
 }
 
-.skills img{
+
+.skills img {
     width: 100%;
     margin: 5px 5px 5px 5px;
     border-radius: 5px;
@@ -124,3 +161,44 @@ main section p{
     box-shadow:-1px -1px 6px 0 rgb(122, 221, 102), 4px 4px 16px 2px rgb(92, 162, 235);
 }
 
+.imagen:hover {filter: saturate(180%);}
+
+.image-text {
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    transform: translate(-20%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 90px;
+    font-weight: 900;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 3px black;
+  }
+
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    header
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 2;
+    }
+    /* Change the header background */
+    header {
+      background: #772014;
+    }
+    /* Change the navbar and footer background */
+    header,
+    footer {
+      background-color: #bb8588;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .firstImg {
+      max-width: 50%;
+    }
+  }
