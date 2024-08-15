@@ -1,7 +1,16 @@
+:root{
+    --nav:#011b2e;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
 }
 
  header{
@@ -9,18 +18,22 @@
     flex-wrap: wrap;
     align-items: center;
     height: 10vh;
-    border: 1px solid red ;
+    background-color: var(--nav);
  }
 
  header h1{
     flex: 1 0 50%;
-    border: 1px solid red ;
+    
+    padding-left: 2%;
+ }
+
+ nav li a{
+    color: white;
  }
 
  header nav{
     flex: 1 0 50%;
     display:flex;
-    border: 1px solid red ;
  }
 
 header ul{
@@ -36,16 +49,14 @@ header li{
     
 }
 
-
-
 main,footer{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red ;
 }
 
 aside{
-    border-right: 2px solid black;
+    margin-top: 3%;
+    border-right: 2px solid  var(--nav);
     flex: 1 0 15%;
     display: flex;
     justify-content: end;
@@ -65,34 +76,43 @@ footer ul{
     justify-content: space-evenly;
 }
 
-#firstPicture img{
-    width: 100%;
+#secondImage img{
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    align-items: center;
+    box-shadow:-1px -1px 6px 0 rgb(159, 7, 7), 4px 4px 16px 2px rgb(1, 12, 130);
 }
 
+
 .firstImg{
-    background: url(https://placehold.co/1200x300);
+    background: url(../images/screen.jpg);
     background-size: contain;
-    height: 55vh;
+    height: 57vh;
     width: 100%;
     background-repeat: no-repeat;
-    border: 1px solid red ;
     display: flex;
     justify-content: flex-end;
     align-items: end;
     padding: 5%;
+    /* box-shadow:-1px -1px 6px 0 rgb(1, 211, 26), 4px 4px 16px 2px rgb(5, 250, 241); */
 }
 
 main section p{
+    margin-top: 3%;
     display: flex;
     padding-left: 7%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-right: 5%;
     text-align: justify;
+    font-size:0.6cm;
+    box-shadow:-1px -1px 6px 0 rgb(159, 7, 7), 4px 4px 16px 2px rgb(1, 12, 130);
 }
 
 .skills{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 3%;
 }
 .skills section{
     flex: 1 0 45%;
@@ -100,5 +120,9 @@ main section p{
 
 .skills img{
     width: 100%;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    box-shadow:-1px -1px 6px 0 rgb(122, 221, 102), 4px 4px 16px 2px rgb(92, 162, 235);
 }
 
